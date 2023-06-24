@@ -9,7 +9,6 @@ const Header = () => {
     fetch('http://localhost:4000/profile', {
       credentials: 'include',
     }).then(response => {
-      console.log(response)
       response.json().then(userInfo => {
         setUserInfo(userInfo);
       });
