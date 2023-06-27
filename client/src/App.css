@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+a {
+  cursor: pointer;
+}
 body {
   color: #333;
 }
@@ -69,8 +72,9 @@ div.post p.info {
   gap: 10px;
 }
 
-div.post p.info a.author {
+div.post p.info p.author {
   color: #333;
+  margin: 0px;
 }
 
 div.post p.summary {
@@ -94,6 +98,7 @@ input {
 }
 
 button {
+  cursor: pointer;
   width: 100%;
   display: block;
   background-color: #555;

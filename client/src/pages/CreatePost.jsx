@@ -47,7 +47,8 @@ const CreatePost = () => {
         onChange={e => setSummary(e.target.value)} />
       <input 
         type="file"
-        onChange={e => setFiles(e.target.files)} />
+        onChange={e => setFiles(e.target.files)}
+        required="true" />
       <Editor value={content} onChange={setContent}/>
       <button style={{marginTop:'5px'}}>Create Post</button>
   </form>

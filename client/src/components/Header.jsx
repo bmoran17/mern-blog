@@ -31,8 +31,9 @@ const Header = () => {
       <nav>
         {username && (
           <>
-            <Link to="/create">Create new post</Link>
-            <a onClick={logout}>Logout</a>
+          <span>Hello, {username}</span>
+          <Link to="/create">Create new post</Link>
+          <a onClick={logout}>Logout</a>
           </>
         )}
         {!username && (
